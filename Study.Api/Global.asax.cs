@@ -21,6 +21,8 @@
 
             SessionManager.AddProvider<Schema.Main>(BuildSessionFactory(ConfigurationManager.ConnectionStrings["Main"].ConnectionString));
 
+            RepositoryResolver.AddTransient<IUserRepository, UserRepository>();
+            RepositoryResolver.AddTransient<ITokenRepository, TokenRepository>();
             RepositoryResolver.AddTransient<IChatRepository, ChatRepository>();
         }
 

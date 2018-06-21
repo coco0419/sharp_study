@@ -8,6 +8,8 @@
 
         public AbstractRepository(ISession session) => _session = session;
 
+        public ISession Session => _session;
+
         public object Create(T source) => _session.Save(source);
 
         public void Dispose()
