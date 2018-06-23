@@ -1,0 +1,20 @@
+﻿<form v-on:submit.prevent="send" id="signin">
+    <ul class="errors" v-if="errors.length > 0">
+        <li v-for="error in errors">{{ labels[error.field] }}{{ messages[error.message] }}</li>
+    </ul>
+
+    <dl>
+        <dt><label for="login_id">{{ labels['login_id'] }}</label></dt>
+        <dd><input type="text" name="login_id" id="login_id" v-model="identity.login_id" /></dd>
+    </dl>
+
+    <dl>
+        <dt><label for="password">{{ labels['password'] }}</label></dt>
+        <dd><input type="password" name="password" id="password" v-model="identity.password" /></dd>
+    </dl>
+
+    <ul class="action">
+        <li><button type="submit">{{ labels['sign_in'] }}</button></li>
+    </ul>
+</form>
+@Scripts.Render("~/bundles/signin/index")

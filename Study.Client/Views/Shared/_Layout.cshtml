@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study</title>
+    @Scripts.Render("~/bundles/vue")
+    @Scripts.Render("~/bundles/js-cookie")
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #input_form {
+            background: white;
+            border-top: 1px solid #CCC;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+        }
+
+        #messages {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 40px;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>

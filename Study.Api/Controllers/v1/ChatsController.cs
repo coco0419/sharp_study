@@ -1,11 +1,13 @@
 ﻿namespace Study.Api.Controllers.v1
 {
     using System.Web.Http;
+    using System.Web.Http.Cors;
     using Study.Api.Http;
     using Study.Api.Requests.v1;
     using Study.Api.Services.v1;
 
     [Auth]
+    [EnableCors("*", "*", "*")]
     [RoutePrefix("api/v1/chats")]
     public class ChatsController : AbstractController
     {

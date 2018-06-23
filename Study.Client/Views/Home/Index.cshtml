@@ -1,0 +1,16 @@
+﻿<div id="messages">
+    <ul>
+        <li v-for="message in messages">
+            <dl>
+                <dt>{{ message.user.nickname }}</dt>
+                <dd>{{ message.chat.message }}</dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+<form id="input_form" v-on:submit.prevent="send">
+    <input type="text" name="message" v-model="message" />
+    <button type="submit">Send</button>
+</form>
+@Scripts.Render("~/bundles/websocket")
+@Scripts.Render("~/bundles/home/index")

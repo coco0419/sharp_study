@@ -1,11 +1,14 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study.Api", "Study.Api\Study.Api.csproj", "{E92B22C0-38CD-4480-AE11-9A83CAED38FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study.Common.Database", "Study.Common.Database\Study.Common.Database.csproj", "{C9C3415D-18DC-4CED-80E6-7D5F4F3DBCCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study.Common", "Study.Common\Study.Common.csproj", "{DE137E45-6C10-490D-8F1E-BEC68FB60701}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study.Client", "Study.Client\Study.Client.csproj", "{C84CDA45-76DC-4797-9EBD-8B00F2E6DB8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,5 +28,15 @@ Global
 		{DE137E45-6C10-490D-8F1E-BEC68FB60701}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE137E45-6C10-490D-8F1E-BEC68FB60701}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE137E45-6C10-490D-8F1E-BEC68FB60701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C84CDA45-76DC-4797-9EBD-8B00F2E6DB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C84CDA45-76DC-4797-9EBD-8B00F2E6DB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C84CDA45-76DC-4797-9EBD-8B00F2E6DB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C84CDA45-76DC-4797-9EBD-8B00F2E6DB8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E391D0FD-BF4A-44A9-B6A1-32E72E4BB40F}
 	EndGlobalSection
 EndGlobal
